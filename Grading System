@@ -1,0 +1,16 @@
+# This program will take a numerical grade and give a letter grade output
+grade = int(input("Enter your grade: "))
+if grade > 89:
+  print("A")
+else:
+  if grade > 79:
+    print("B")
+  else:
+    if grade > 69:
+      print("C")
+    else:
+      if grade > 59:
+        print("D")
+      else:
+        if grade < 60:
+          print("F")
