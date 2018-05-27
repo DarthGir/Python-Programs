@@ -1,0 +1,9 @@
+# Read 2 integers:
+a = input()
+b = input()
+# Check to see which one is bigger
+if a>b:
+  print("The bigger number is " +( a))
+if b>a:
+  print("The bigger number is " +( b))
+# print the bigger integer
