@@ -1,0 +1,6 @@
+# input how many arrays
+y = int(input("How many arrays do you want to find the average of?"))
+for x in range(y):
+  a2 = input().split()
+  a2 = [int(x) for x in a2]
+  print (sum(a2)/len(a2))
