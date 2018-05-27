@@ -1,0 +1,18 @@
+# Use your code from the last exercise.
+num_array = list()
+q = input("How many elements do you want?:")
+for i in range(int(q)):
+    n = input("Enter next number:")
+    num_array.append(int(n))
+print (num_array)
+# Now check to see how many of a number are in the array.
+# Hint: use the code from the examples in class.
+a = int(input("Which number do you want to find?"))
+def list_count_4(nums):
+  count = 0
+  for num in nums:
+    if num == a:
+      count = count + 1
+  return count
+  
+print(list_count_4(num_array))
