@@ -1,0 +1,18 @@
+print("Please only enter whole numbers; Decimals, fractions, and words will break the game!")
+import random #this will import a random number
+randomNumber = random.randrange(0,100)
+print("A number has been generated. If you guess it you win!")
+guessed = False
+while guessed==False:
+    userInput = int(input("Enter your guess: "))
+    if userInput==randomNumber:
+        guessed = True
+        print("Congratulations!! You won!!")
+    elif userInput>100:
+        print("That guess is too high!")
+    elif userInput<0:
+        print("You  need to guess lower!")
+    elif userInput>randomNumber:
+        print("Guess lower!")
+    elif userInput < randomNumber:
+        print("Guess higher!")
