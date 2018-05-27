@@ -1,0 +1,12 @@
+# Use a for loop
+x = int(input())
+y = int(input())
+nums = [x, y]
+max = 500
+
+result = 0
+for i in range(0,max):
+    if i%x == 0 or i%y == 0:
+        result += i
+
+print (result)
