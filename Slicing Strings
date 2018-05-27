@@ -1,0 +1,15 @@
+# Read a string:
+# s = input()
+# Print a string:
+# print(s)
+
+s = input()
+print (s[2]) #print the third character of this string. 1
+print (s[-2]) #print the second to last character of this string. 2
+print (s[0:5]) #print the first five characters of this string. 3 
+print (s[0:-2]) #print all but the last two characters of this string. 4
+print (s[0::2]) #print all the characters of this string with even indices 5
+print (s[1::2])#print all the characters of this string with odd indices 6
+print (s[::-1]) #print every second character of the string in reverse order 7
+print (s[::-2]) #print every second character of the string in reverse order, starting from the last one.
+print (len(s))
