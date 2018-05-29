@@ -1,0 +1,38 @@
+import random
+Choices = ['Rock', 'Paper', 'Scissors']
+#player 1 input
+#player 2 input
+#compare
+#check for tie
+#print winner
+print("Welcome to Rock Paper Scissors!")
+print("-------------------------------")
+print()
+
+computer = random.choice(Choices).upper()#Chooses a random choice from the array
+
+player = False
+while player == False:
+  #Sets player input
+  player = input("Please input Rock, Paper, or Scissors\n").upper()
+  print(computer)
+  
+  if player == computer:
+    print('Tie!')
+  elif player == 'Rock'.upper():
+    if computer == 'Scissors'.upper():
+      print("You win! Rock beats scissors!")
+    else:
+     if computer == 'Paper'.upper():
+        print("You lose! Paper beats Rock!")
+  elif player == 'Paper'.upper():
+    if computer == 'Rock'.upper():
+      print("You win! Paper covers rock!")
+    else:
+      if computer == 'Scissors'.upper():
+        print("You lose! Scissors cuts paper!")
+  elif player == 'Scissors'.upper():
+    if computer == 'Paper'.upper():
+      print("You win! Scissors cuts paper!")
+      if computer == 'Rock'.upper():
+        print("You lose! Rock beats scissors!")
