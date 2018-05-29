@@ -1,0 +1,18 @@
+print("This will solve your anagram")
+anagram = input("Pls inter werd 4 Scrble hacks free 100% legit no virus!?!?!\n").upper()
+
+list_anagram = list(anagram)
+print(list_anagram)
+list_anagram.sort()
+print(list_anagram)
+
+def check_words(filename = 'wordbank.txt'):
+  with open(filename) as f:
+    for line in f:
+      word = line.strip()
+      list_word = list(word)
+      list_word.sort()
+      if list_word == list_anagram:
+        print(word)
+
+check_words()
