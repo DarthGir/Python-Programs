@@ -1,0 +1,26 @@
+game = [[1, 2, 0],
+	[2, 1, 0],
+	[2, 1, 1]]
+
+if game[0][0] == game[0][1] == game[0][2]:
+  winner = game[0][0]
+elif game[1][0] == game[1][1] == game[1][2]:
+  winner = game[1][0]
+elif game[2][0] == game[2][1] == game[2][2]:
+  winner = game[2][0]
+elif game[0][0] ==game[1][0] == game[2][0]:
+  winner = game[0][0]
+elif game[0][1] == game[1][1] == game[2][1]:
+  winner = game[0][1]
+elif game[0][2] == game[1][2] == game[2][2]:
+  winner = game[0][0]
+elif game[0][0] == game[1][1] == game[2][2]:
+  winner = game[2][2]
+elif game[2][0] == game[1][1] == game[0][2]:
+  winner = game[0][0]
+if winner ==1:
+  print('Player 1 is the winner')
+if winner ==2:
+  print('Player 2 is the winner')
+if winner ==0:
+  print("There was a tie! You're both losers!")
