@@ -1,0 +1,10 @@
+import random
+#Opens document
+with open('wordbank.txt', 'r') as f:
+  lines = f.readlines()
+#Does the randomizing
+line = lines
+words = line
+hangmanword = random.choice(words)
+#Prints word
+print(hangmanword)
