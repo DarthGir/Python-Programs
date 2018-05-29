@@ -1,0 +1,30 @@
+import random
+
+print('Welcome to Hangman!')
+
+# Insert the code from last exercise here.    
+#Opens document
+with open('wordbank.txt', 'r') as f:
+  lines = f.read().split()
+#Does the randomizing
+line = lines
+words = line
+word = random.choice(words)
+#Prints word
+print(word)
+
+# Now ask the user to guess the word
+guess = list('_' * len(word))
+while list(word) != guess:
+  print(' '.join(guess))  # This joins the guess with the blank spaces.
+  #Step 3
+  v = input("Guess a letter!").upper()
+  if v not in word:
+    print('Incorrect!')
+  else:
+     i = 0
+  while i < len(word):
+      if list(word)[i] == v:
+        guess[i] = v
+      i += 1
+print('You\'re right! It\'s ' + word + '.')
