@@ -1,0 +1,43 @@
+# imports. If you need to import anything, please place here.
+import time
+
+# inputs
+name = input('Enter your name: ')
+num_of_stars = int(input('Please Enter the rows of stars you would like to print: '))
+x = int(input('What number do you want to count to? '))
+
+array = input('Please enter an array separated by spaces to check for duplicates.\n').split()
+array = [int(x) for x in array]
+
+
+
+# Exercise 1 function
+def reverse():
+  print (name[::-1])
+
+# Exercise 2 function
+def pyramid():
+  f = '*'
+  for i in range(num_of_stars):
+		  print(f)
+		  f = f + "*"
+
+# Exercise 3 function
+def seconds():
+  count = 0
+  for q in range(x):
+    count+=1
+    time.sleep(1)
+    print(count)
+
+# Exercise 4 function
+def duplication():
+  seen = {}
+  new_list = [seen.setdefault(x, x) for x in array if x not in seen]
+  print(new_list)
+
+# Call all your functions here.
+reverse()
+pyramid()
+seconds()
+duplication()
